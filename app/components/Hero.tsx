@@ -14,7 +14,7 @@ export default function Hero() {
         position: "relative",
         padding: "120px 20px 80px 20px",
         minHeight: "100vh",
-        backgroundImage: "url('/hero-bg.jpg')",
+        backgroundImage: "url('/hero.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
