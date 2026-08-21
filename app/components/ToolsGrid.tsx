@@ -52,7 +52,7 @@ export default function ToolsGrid() {
         style={{
           position: "absolute",
           inset: 0,
-          backgroundImage: "url('/Hero.jpg')", // تأكد من اسم الصورة الصحيح
+          backgroundImage: "url('/hero.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           opacity: 0.15,
