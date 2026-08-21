@@ -1,0 +1,222 @@
+export const designTools = [
+  {
+    id: "figma",
+    name: "Figma",
+    description: "The collaborative interface design tool for teams to create websites, apps, and more.",
+    category: "UI/UX",
+    icon: "🎨",
+    rating: "4.9",
+    longDescription: "Figma is a cloud-based design and prototyping tool used extensively by UI/UX designers for creating web and mobile applications with real-time collaboration.",
+    features: ["Real-time Collaboration", "Prototyping", "Vector Networks", "Design Systems", "Developer Handoff"],
+    url: "https://www.figma.com/"
+  },
+  {
+    id: "canva",
+    name: "Canva",
+    description: "An online design and publishing tool with thousands of templates for presentations and social media.",
+    category: "Graphics",
+    icon: "✨",
+    rating: "4.8",
+    longDescription: "Canva makes graphic design simple for everyone. Create presentations, social media posts, posters, videos, and logos using drag-and-drop features and ready-made templates.",
+    features: ["Drag and Drop", "Templates Library", "Brand Kit", "Video Editor", "Team Workspaces"],
+    url: "https://www.canva.com/"
+  },
+  {
+    id: "photoshop",
+    name: "Adobe Photoshop",
+    description: "The industry standard for digital painting, photo manipulation, and graphic design.",
+    category: "Photo Editing",
+    icon: "🖼️",
+    rating: "4.9",
+    longDescription: "Adobe Photoshop is a robust software used worldwide for creating stunning images, graphics, paintings, and 3D artwork across desktop and iPad.",
+    features: ["AI Generative Fill", "Layers & Masks", "Advanced Retouching", "Typography", "Cloud Documents"],
+    url: "https://www.adobe.com/products/photoshop.html"
+  },
+  {
+    id: "illustrator",
+    name: "Adobe Illustrator",
+    description: "Industry-standard vector graphics software for logos, icons, sketches, and complex illustrations.",
+    category: "Vector",
+    icon: "✒️",
+    rating: "4.8",
+    longDescription: "Illustrator lets you create scalable vector graphics that look crisp on mobile screens and billboards alike, perfect for logos, typography, and complex artwork.",
+    features: ["Vector Graphics", "Typography Tools", "Image Trace", "Freehand Drawing", "Smooth Scaling"],
+    url: "https://www.adobe.com/products/illustrator.html"
+  },
+  {
+    id: "premiere",
+    name: "Adobe Premiere Pro",
+    description: "Industry-leading video editing software for film, TV, and the web.",
+    category: "Video Editing",
+    icon: "🎬",
+    rating: "4.8",
+    longDescription: "Premiere Pro is used by Hollywood filmmakers, TV editors, YouTubers, and designers for professional video editing, color grading, and audio mixing.",
+    features: ["Multicam Editing", "Lumetri Color", "Audio Mixing", "Motion Graphics", "VR Support"],
+    url: "https://www.adobe.com/products/premiere.html"
+  },
+  {
+    id: "aftereffects",
+    name: "Adobe After Effects",
+    description: "Industry-standard motion graphics and visual effects software for film and video.",
+    category: "VFX & Motion",
+    icon: "💫",
+    rating: "4.8",
+    longDescription: "Create cinematic movie titles, intros, and transitions. Remove objects from a video or start a fire—with After Effects, you can bring any idea to motion.",
+    features: ["Motion Graphics", "Visual Effects", "Keyframing", "3D Workspace", "Data-driven Animation"],
+    url: "https://www.adobe.com/products/aftereffects.html"
+  },
+  {
+    id: "xd",
+    name: "Adobe XD",
+    description: "Fast & powerful UI/UX design and collaboration tool for websites and apps.",
+    category: "UI/UX",
+    icon: "🔷",
+    rating: "4.6",
+    longDescription: "Adobe XD is a vector-based user experience design tool for web apps and mobile apps, developed and published by Adobe Inc.",
+    features: ["Voice Prototyping", "Repeat Grid", "Auto-Animate", "Design Specs", "Cloud Sharing"],
+    url: "https://www.adobe.com/products/xd.html"
+  },
+  {
+    id: "blender",
+    name: "Blender",
+    description: "Free and open source 3D creation suite supporting modeling, animation, rendering, and more.",
+    category: "3D Modeling",
+    icon: "🧊",
+    rating: "4.9",
+    longDescription: "Blender is a comprehensive 3D creation suite, offering a wide range of essential tools including 3D modeling, UV unwrapping, texturing, rigging, and video editing.",
+    features: ["Sculpting", "Cycles Render Engine", "Animation", "VFX Tracking", "Video Editing"],
+    url: "https://www.blender.org/"
+  },
+  {
+    id: "sketch",
+    name: "Sketch",
+    description: "The digital design toolkit built for Mac to create your best work, from collaborative design to prototyping.",
+    category: "UI/UX",
+    icon: "💎",
+    rating: "4.7",
+    longDescription: "Sketch is an intuitive vector-based design tool tailored specifically for user interface and user experience design on macOS.",
+    features: ["Vector Editing", "Shared Libraries", "Prototyping", "Mac Native", "Developer Hand-off"],
+    url: "https://www.sketch.com/"
+  },
+  {
+    id: "indesign",
+    name: "Adobe InDesign",
+    description: "Industry-leading page design and layout software for print and digital publishing.",
+    category: "Publishing",
+    icon: "📖",
+    rating: "4.7",
+    longDescription: "Create professional magazines, interactive PDFs, flyers, brochures, and digital books with InDesign's powerful layout and typography tools.",
+    features: ["Page Layout", "Typography", "Interactive PDFs", "EPUB Export", "Preflight Checks"],
+    url: "https://www.adobe.com/products/indesign.html"
+  },
+  {
+    id: "lightroom",
+    name: "Adobe Lightroom",
+    description: "Cloud-based photo service for editing, organizing, storing, and sharing your photos.",
+    category: "Photo Editing",
+    icon: "📷",
+    rating: "4.8",
+    longDescription: "Lightroom gives you powerful one-click fixes and advanced controls to make your photos look amazing anywhere you are.",
+    features: ["Cloud Storage", "Presets", "AI Masking", "Batch Editing", "Mobile Sync"],
+    url: "https://www.adobe.com/products/photoshop-lightroom.html"
+  },
+  {
+    id: "framer",
+    name: "Framer",
+    description: "The web builder for creative pros. Design and publish stunning responsive sites with zero code.",
+    category: "Web Design",
+    icon: "⚡",
+    rating: "4.8",
+    longDescription: "Framer combines visual design with production-ready code, allowing designers to build high-end websites with animations and CMS integration easily.",
+    features: ["Interactive Canvas", "Built-in CMS", "Animations", "Responsive Design", "Instant Publish"],
+    url: "https://www.framer.com/"
+  },
+  {
+    id: "webflow",
+    name: "Webflow",
+    description: "Build custom, production-ready websites without writing code, with complete visual control.",
+    category: "Web Design",
+    icon: "🌐",
+    rating: "4.8",
+    longDescription: "Webflow empowers designers to build complex, fully responsive websites using HTML, CSS, and JavaScript visually in a professional canvas.",
+    features: ["Visual CSS Control", "CMS & E-commerce", "Interactions", "Hosting", "SEO Tools"],
+    url: "https://webflow.com/"
+  },
+  {
+    id: "procreate",
+    name: "Procreate",
+    description: "Powerful sketching, painting, and illustration app designed exclusively for iPad.",
+    category: "Digital Art",
+    icon: "✏️",
+    rating: "4.9",
+    longDescription: "Procreate is packed with hundreds of handmade brushes, a suite of innovative artistic tools, an advanced layer system, and the lightning-fast Valkyrie graphics engine.",
+    features: ["Advanced Brushes", "Valkyrie Engine", "Animation Assist", "QuickShape", "4K Cinema Canvas"],
+    url: "https://procreate.com/"
+  },
+  {
+    id: "coreldraw",
+    name: "CorelDRAW",
+    description: "Professional vector illustration and page layout software for graphic designers.",
+    category: "Vector",
+    icon: "📐",
+    rating: "4.6",
+    longDescription: "CorelDRAW provides a seamless design experience for vector illustration, layout, photo editing, and typography with high-end tools.",
+    features: ["Vector Illustration", "Layout Tools", "Typography", "Color Management", "Collaboration"],
+    url: "https://www.coreldraw.com/"
+  },
+  {
+    id: "davinci",
+    name: "DaVinci Resolve",
+    description: "The world's only solution that combines editing, color correction, visual effects, and audio post-production.",
+    category: "Video Editing",
+    icon: "🎞️",
+    rating: "4.9",
+    longDescription: "DaVinci Resolve is Hollywood’s most popular software combining professional 8K video editing, color correction, Fairlight audio, and VFX all in one application.",
+    features: ["Color Correction", "Fairlight Audio", "Fusion VFX", "Cut Page", "Multi-user Collaboration"],
+    url: "https://www.blackmagicdesign.com/products/davinciresolve"
+  },
+  {
+    id: "figjam",
+    name: "FigJam",
+    description: "An online collaborative whiteboard where teams can brainstorm, diagram, and work together.",
+    category: "Brainstorming",
+    icon: "🧠",
+    rating: "4.8",
+    longDescription: "FigJam is an online whiteboard built for teams to ideate, map out user flows, plan sprints, and host interactive workshops together.",
+    features: ["Sticky Notes", "Diagramming", "Emotes & Stamps", "Audio Chats", "Templates"],
+    url: "https://www.figma.com/figjam/"
+  },
+  {
+    id: "invision",
+    name: "InVision",
+    description: "Digital product design platform used to create interactive prototypes and design workflows.",
+    category: "Prototyping",
+    icon: "🔄",
+    rating: "4.5",
+    longDescription: "InVision helps teams build better digital products faster with powerful prototyping, design systems, and workflow collaboration tools.",
+    features: ["Interactive Prototyping", "Design Specs", "Feedback Mode", "Cloud Sync", "Enterprise Security"],
+    url: "https://www.invisionapp.com/"
+  },
+  {
+    id: "zeplin",
+    name: "Zeplin",
+    description: "The connected space for product teams to bridge the gap between design and development.",
+    category: "Developer Handoff",
+    icon: "🚀",
+    rating: "4.7",
+    longDescription: "Zeplin publishes design specs, assets, and code snippets automatically, helping designers and developers hand off projects smoothly.",
+    features: ["Design Handoff", "Code Snippets", "Styleguides", "Version Control", "Integrations"],
+    url: "https://zeplin.io/"
+  },
+  {
+    id: "affinity",
+    name: "Affinity Designer",
+    description: "Fast, smooth, and precise vector graphic design software built for creative professionals.",
+    category: "Vector",
+    icon: "🎯",
+    rating: "4.8",
+    longDescription: "Affinity Designer is a powerhouse vector graphics editor offering incredible performance, live gradients, and real-time panning and zooming.",
+    features: ["Vector & Raster", "Pan & Zoom", "Unrestricted Zoom", "Custom Grids", "PDF Export"],
+    url: "https://affinity.serif.com/designer/"
+  }
+];

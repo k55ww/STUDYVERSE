@@ -1,10 +1,10 @@
 export default function ToolsGrid() {
   const tools = [
     { 
-     icon: "🤖",
+      icon: "🤖",
       title: "AI Tools",
       text: "Explore the best AI tools for writing, coding, design, and studying.",
-     link: "/ai-tools",
+      link: "/ai-tools",
     },
     {
       icon: "📄",
@@ -12,36 +12,35 @@ export default function ToolsGrid() {
       text: "Merge, Split, Compress, Convert, and Edit PDF files.",
       link: "/pdf-tools",
     },
-
     {
       icon: "🎓",
       title: "Research Hub",
       text: "Generate citations, find references, and manage academic research.",
-    link: "/research-hub",
+      link: "/research-hub",
     },
     {
       icon: "💻",
       title: "Programming",
       text: "Coding tools, code generators, and developer resources.",
-    link: "/programming",
+      link: "/programming",
     },
     {
       icon: "🎨",
       title: "Design Tools",
       text: "Create presentations, images, logos, and graphics with AI.",
-    link: "/design-tools",
+      link: "/design-tools",
     },
     {
       icon: "📚",
       title: "Study Assistant",
       text: "Flashcards, quizzes, summaries, and smart study planner.",
-    link: "/study-assistant",
+      link: "/study-assistant",
     },
   ];
 
   return (
     <section
-    id="tools"
+      id="tools"
       style={{
         display: "grid",
         gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
@@ -52,25 +51,27 @@ export default function ToolsGrid() {
       }}
     >
       {tools.map((tool, index) => (
-       <a
-  key={index}
-  href={tool.link}
-  style={{
-    background: "#1e293b",
-    borderRadius: "20px",
-    padding: "30px",
-    textAlign: "center",
-    color: "white",
-    textDecoration: "none",
-    transition: "0.3s",
-    display: "block",
-    cursor: "pointer",
+        <a
+          key={index}
+          href={tool.link}
+          className="glass-card"
+          style={{
+            background: "rgba(15, 23, 42, 0.6)",
+            backdropFilter: "blur(12px)",
+            borderRadius: "20px",
+            padding: "30px",
+            textAlign: "center",
+            color: "white",
+            textDecoration: "none",
+            display: "block",
+            border: "1px solid rgba(255, 255, 255, 0.1)",
           }}
-        ><div style={{ fontSize: "40px", marginBottom: "15px" }}>
-  {tool.icon}
-</div>
-          <h2 style={{ color: "#38bdf8" }}>{tool.title}</h2>
-          <p>{tool.text}</p>
+        >
+          <div style={{ fontSize: "40px", marginBottom: "15px" }}>
+            {tool.icon}
+          </div>
+          <h2 style={{ color: "#38bdf8", marginBottom: "10px" }}>{tool.title}</h2>
+          <p style={{ color: "#94a3b8", fontSize: "0.95rem", lineHeight: "1.5" }}>{tool.text}</p>
         </a>
       ))}
     </section>
