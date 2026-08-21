@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import "./globals.css";
+import { Analytics } from '@vercel/analytics/react'; // 1. أضف هذا الاستيراد بالأعلى
 
 export const metadata = {
   title: "StudyVerse | Next-Gen AI Academic Platform",
@@ -27,6 +28,9 @@ export default function RootLayout({
 
         {/* محتوى الصفحة */}
         {children}
+
+        {/* 2. أضف هذا المكون قبل إغلاق الـ body */}
+        <Analytics />
       </body>
     </html>
   );
