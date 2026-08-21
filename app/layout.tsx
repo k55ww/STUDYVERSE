@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import "./globals.css";
-import { Analytics } from '@vercel/analytics/react'; // 1. أضف هذا الاستيراد بالأعلى
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next"; // 1. استيراد أداة قياس السرعة
 
 export const metadata = {
   title: "StudyVerse | Next-Gen AI Academic Platform",
@@ -29,8 +30,9 @@ export default function RootLayout({
         {/* محتوى الصفحة */}
         {children}
 
-        {/* 2. أضف هذا المكون قبل إغلاق الـ body */}
+        {/* أدوات تتبع الأداء والزوار */}
         <Analytics />
+        <SpeedInsights /> {/* 2. تفعيل قياس سرعة الموقع */}
       </body>
     </html>
   );
