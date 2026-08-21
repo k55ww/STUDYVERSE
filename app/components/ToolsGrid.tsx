@@ -47,7 +47,7 @@ export default function ToolsGrid() {
         overflow: "hidden",
       }}
     >
-      {/* خلفية المكتبة الفخمة */}
+      {/* خلفية المكتبة الفخمة (تم زيادة الوضوح) */}
       <div
         style={{
           position: "absolute",
@@ -55,18 +55,18 @@ export default function ToolsGrid() {
           backgroundImage: "url('/hero.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          opacity: 0.15,
+          opacity: 0.45,
           zIndex: 0,
         }}
       />
 
-      {/* طبقة العتمة السوداء */}
+      {/* طبقة العتمة السوداء (تم تعديلها لزيادة التوازن والبروز) */}
       <div
         style={{
           position: "absolute",
           inset: 0,
           backgroundColor: "#020617",
-          opacity: 0.85,
+          opacity: 0.88,
           zIndex: 1,
         }}
       />
