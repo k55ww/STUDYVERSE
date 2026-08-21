@@ -47,20 +47,20 @@ export default function ToolsGrid() {
         overflow: "hidden",
       }}
     >
-      {/* خلفية المكتبة ونفس الصورة اللي بالـ Hero */}
+      {/* خلفية المكتبة الفخمة */}
       <div
         style={{
           position: "absolute",
           inset: 0,
-          backgroundImage: "url('/Hero.jpg')", // تأكد أن اسم ومسار الصورة مطابق لملف الصورة عندك
+          backgroundImage: "url('/Hero.jpg')", // تأكد من اسم الصورة الصحيح
           backgroundSize: "cover",
           backgroundPosition: "center",
-          opacity: 0.15, // تخفيف الشفافية حتى تكون الخلفية ناعمة
+          opacity: 0.15,
           zIndex: 0,
         }}
       />
 
-      {/* طبقة عتمة سوداء لضمان وضوح الكروت والنصوص */}
+      {/* طبقة العتمة السوداء */}
       <div
         style={{
           position: "absolute",
@@ -71,7 +71,7 @@ export default function ToolsGrid() {
         }}
       />
 
-      {/* حاوي الكروت والشبكة (Grid) */}
+      {/* شبكة الكروت */}
       <div
         style={{
           position: "relative",
@@ -98,7 +98,6 @@ export default function ToolsGrid() {
               textDecoration: "none",
               display: "block",
               border: "1px solid rgba(255, 255, 255, 0.1)",
-              transition: "transform 0.3s ease, border-color 0.3s ease",
             }}
           >
             <div style={{ fontSize: "40px", marginBottom: "15px" }}>
