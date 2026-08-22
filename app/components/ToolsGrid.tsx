@@ -43,11 +43,11 @@ export default function ToolsGrid() {
       id="tools"
       style={{
         position: "relative",
-        padding: "80px 20px",
+        padding: "40px 15px", // مسافات متجاوبة ومناسبة للموبايل والشاشات الكبيرة
         overflow: "hidden",
       }}
     >
-      {/* خلفية المكتبة الفخمة (تم زيادة الوضوح) */}
+      {/* خلفية المكتبة الفخمة */}
       <div
         style={{
           position: "absolute",
@@ -60,7 +60,7 @@ export default function ToolsGrid() {
         }}
       />
 
-      {/* طبقة العتمة السوداء (تم تعديلها لزيادة التوازن والبروز) */}
+      {/* طبقة العتمة السوداء */}
       <div
         style={{
           position: "absolute",
@@ -71,16 +71,18 @@ export default function ToolsGrid() {
         }}
       />
 
-      {/* شبكة الكروت */}
+      {/* شبكة الكروت المتجاوبة */}
       <div
         style={{
           position: "relative",
           zIndex: 2,
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-          gap: "25px",
+          // متجاوبة: تصغر وتصطف عمودياً بالموبايل وتتوسع بالـ PC
+          gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+          gap: "20px",
           maxWidth: "1200px",
           margin: "auto",
+          width: "100%",
         }}
       >
         {tools.map((tool, index) => (
@@ -92,7 +94,7 @@ export default function ToolsGrid() {
               background: "rgba(15, 23, 42, 0.75)",
               backdropFilter: "blur(12px)",
               borderRadius: "20px",
-              padding: "30px",
+              padding: "25px 20px", // بادينغ متناسق للموبايل
               textAlign: "center",
               color: "white",
               textDecoration: "none",
@@ -100,11 +102,11 @@ export default function ToolsGrid() {
               border: "1px solid rgba(255, 255, 255, 0.1)",
             }}
           >
-            <div style={{ fontSize: "40px", marginBottom: "15px" }}>
+            <div style={{ fontSize: "38px", marginBottom: "12px" }}>
               {tool.icon}
             </div>
-            <h2 style={{ color: "#38bdf8", marginBottom: "10px", fontSize: "1.25rem" }}>{tool.title}</h2>
-            <p style={{ color: "#94a3b8", fontSize: "0.95rem", lineHeight: "1.5" }}>{tool.text}</p>
+            <h2 style={{ color: "#38bdf8", marginBottom: "8px", fontSize: "1.15rem" }}>{tool.title}</h2>
+            <p style={{ color: "#94a3b8", fontSize: "0.9rem", lineHeight: "1.4" }}>{tool.text}</p>
           </a>
         ))}
       </div>
