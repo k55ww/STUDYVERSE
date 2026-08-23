@@ -12,7 +12,7 @@ export default function Hero() {
     <section
       style={{
         position: "relative",
-        padding: "100px 15px 60px 15px",
+        padding: "140px 20px 100px 20px", // مسافات مريحة وكبيرة للـ PC حتى يرتفع النص وما يتداخل
         minHeight: "100vh",
         backgroundImage: "url('/hero.jpg')",
         backgroundSize: "cover",
@@ -23,7 +23,6 @@ export default function Hero() {
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center",
-        overflow: "hidden", // لمنع أي خروج للعناصر عن حدود الشاشة أفقياً
       }}
     >
       {/* 🌑 طبقة عتمة */}
@@ -42,18 +41,18 @@ export default function Hero() {
       {/* محتوى الـ Hero */}
       <div style={{ position: "relative", zIndex: 2, maxWidth: "1000px", width: "100%" }}>
         
-        {/* 🔮 هالة ضوئية متجاوبة (تم تقليل عرضها للموبايل) */}
+        {/* 🔮 هالة ضوئية */}
         <div
           style={{
             position: "absolute",
             top: "10%",
             left: "50%",
             transform: "translateX(-50%)",
-            width: "min(400px, 90vw)",
-            height: "250px",
+            width: "550px",
+            height: "300px",
             background:
               "radial-gradient(circle, rgba(56, 189, 248, 0.2) 0%, rgba(139, 92, 246, 0.15) 50%, transparent 70%)",
-            filter: "blur(70px)",
+            filter: "blur(90px)",
             pointerEvents: "none",
           }}
         />
@@ -66,26 +65,26 @@ export default function Hero() {
             gap: "8px",
             background: "rgba(15, 23, 42, 0.7)",
             border: "1px solid rgba(56, 189, 248, 0.3)",
-            padding: "6px 16px",
+            padding: "8px 20px",
             borderRadius: "50px",
-            fontSize: "12px",
+            fontSize: "13px",
             color: "#38bdf8",
             fontWeight: "600",
-            marginBottom: "20px",
+            marginBottom: "28px",
             backdropFilter: "blur(10px)",
           }}
         >
           <span>✨</span> Next-Gen Academic Platform
         </div>
 
-        {/* 🚀 العنوان الرئيسي (متجاوب: أصغر بالموبايل وأكبر بالـ PC) */}
+        {/* 🚀 العنوان الرئيسي */}
         <h1
           style={{
-            fontSize: "clamp(36px, 7vw, 64px)",
+            fontSize: "64px",
             fontWeight: "900",
             lineHeight: "1.1",
-            letterSpacing: "-1px",
-            margin: "0 0 20px 0",
+            letterSpacing: "-2px",
+            margin: "0 0 24px 0",
             color: "#ffffff",
           }}
         >
@@ -96,13 +95,12 @@ export default function Hero() {
         {/* 📝 الوصف */}
         <p
           style={{
-            fontSize: "clamp(15px, 2vw, 19px)",
+            fontSize: "19px",
             color: "#94a3b8",
             maxWidth: "680px",
-            margin: "0 auto 30px auto",
+            margin: "0 auto 36px auto",
             lineHeight: "1.6",
             fontWeight: "400",
-            padding: "0 10px",
           }}
         >
           An AI-powered workspace built for university students to craft reports,
@@ -110,15 +108,15 @@ export default function Hero() {
         </p>
 
         {/* 🔘 زر Get Started */}
-        <div style={{ display: "flex", justifyContent: "center", marginBottom: "35px" }}>
+        <div style={{ display: "flex", justifyContent: "center", marginBottom: "48px" }}>
           <button
             onClick={scrollToTools}
             style={{
               background: "linear-gradient(135deg, #0284c7 0%, #6d28d9 100%)",
               color: "#ffffff",
-              padding: "14px 36px",
+              padding: "16px 42px",
               borderRadius: "12px",
-              fontSize: "16px",
+              fontSize: "17px",
               fontWeight: "700",
               border: "1px solid rgba(255, 255, 255, 0.2)",
               cursor: "pointer",
@@ -130,12 +128,12 @@ export default function Hero() {
           </button>
         </div>
 
-        {/* ✨ الميزات السريعة */}
+        {/* ✨ الميزات السريعة الثلاث */}
         <div
           style={{
             display: "flex",
             justifyContent: "center",
-            gap: "12px",
+            gap: "16px",
             flexWrap: "wrap",
           }}
         >
@@ -144,12 +142,12 @@ export default function Hero() {
               background: "rgba(15, 23, 42, 0.6)",
               border: "1px solid rgba(255, 255, 255, 0.08)",
               backdropFilter: "blur(12px)",
-              padding: "10px 18px",
+              padding: "12px 24px",
               borderRadius: "12px",
               display: "flex",
               alignItems: "center",
-              gap: "8px",
-              fontSize: "13px",
+              gap: "10px",
+              fontSize: "14px",
               color: "#e2e8f0",
               fontWeight: "500",
             }}
@@ -162,12 +160,12 @@ export default function Hero() {
               background: "rgba(15, 23, 42, 0.6)",
               border: "1px solid rgba(255, 255, 255, 0.08)",
               backdropFilter: "blur(12px)",
-              padding: "10px 18px",
+              padding: "12px 24px",
               borderRadius: "12px",
               display: "flex",
               alignItems: "center",
-              gap: "8px",
-              fontSize: "13px",
+              gap: "10px",
+              fontSize: "14px",
               color: "#e2e8f0",
               fontWeight: "500",
             }}
@@ -180,12 +178,12 @@ export default function Hero() {
               background: "rgba(15, 23, 42, 0.6)",
               border: "1px solid rgba(255, 255, 255, 0.08)",
               backdropFilter: "blur(12px)",
-              padding: "10px 18px",
+              padding: "12px 24px",
               borderRadius: "12px",
               display: "flex",
               alignItems: "center",
-              gap: "8px",
-              fontSize: "13px",
+              gap: "10px",
+              fontSize: "14px",
               color: "#e2e8f0",
               fontWeight: "500",
             }}
