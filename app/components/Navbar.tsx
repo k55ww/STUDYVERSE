@@ -14,13 +14,12 @@ export default function Navbar() {
         WebkitBackdropFilter: "blur(16px)",
         background: "rgba(3, 7, 18, 0.85)",
         borderBottom: "1px solid rgba(255, 255, 255, 0.08)",
-        padding: "10px 15px", // تقليل البادينغ ليتناسب مع الموبايل والشاشات الصغيرة
+        padding: "14px 30px", // مسافات مريحة ومرتبة ترجع الشكل الفخم للـ PC
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
         width: "100%",
         boxSizing: "border-box",
-        overflowX: "hidden",
       }}
     >
       {/* 🚀 الشعار واسم الموقع */}
@@ -29,7 +28,7 @@ export default function Navbar() {
         style={{
           display: "flex",
           alignItems: "center",
-          gap: "8px",
+          gap: "12px",
           textDecoration: "none",
           cursor: "pointer",
         }}
@@ -37,8 +36,8 @@ export default function Navbar() {
         <div
           style={{
             position: "relative",
-            width: "36px",
-            height: "36px",
+            width: "42px",
+            height: "42px",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -50,7 +49,7 @@ export default function Navbar() {
               inset: 0,
               background:
                 "radial-gradient(circle, rgba(56, 189, 248, 0.4) 0%, rgba(168, 85, 247, 0.4) 100%)",
-              filter: "blur(8px)",
+              filter: "blur(10px)",
               borderRadius: "50%",
               opacity: 0.7,
             }}
@@ -58,12 +57,12 @@ export default function Navbar() {
           <Image
             src="/logo.png"
             alt="StudyVerse Logo"
-            width={36}
-            height={36}
+            width={42}
+            height={42}
             style={{
               position: "relative",
               zIndex: 1,
-              borderRadius: "8px",
+              borderRadius: "10px",
               objectFit: "contain",
               mixBlendMode: "screen",
             }}
@@ -72,7 +71,7 @@ export default function Navbar() {
 
         <span
           style={{
-            fontSize: "18px",
+            fontSize: "22px",
             fontWeight: "900",
             letterSpacing: "-0.5px",
             color: "#ffffff",
@@ -83,15 +82,14 @@ export default function Navbar() {
       </Link>
 
       {/* 🔗 روابط الملاحة + زر تسجيل الدخول */}
-      <nav style={{ display: "flex", gap: "12px", alignItems: "center" }}>
-        {/* الروابط تظهر بشكل مصغر ومناسب، أو تختفي بالشاشات الضيقة جداً */}
+      <nav style={{ display: "flex", gap: "24px", alignItems: "center" }}>
         <Link
           href="/"
           style={{
             color: "#ffffff",
             textDecoration: "none",
             fontWeight: "600",
-            fontSize: "13px",
+            fontSize: "14px",
           }}
         >
           Home
@@ -102,7 +100,7 @@ export default function Navbar() {
             color: "#94a3b8",
             textDecoration: "none",
             fontWeight: "500",
-            fontSize: "13px",
+            fontSize: "14px",
           }}
         >
           Courses
@@ -113,23 +111,34 @@ export default function Navbar() {
             color: "#94a3b8",
             textDecoration: "none",
             fontWeight: "500",
-            fontSize: "13px",
+            fontSize: "14px",
           }}
         >
           About
         </Link>
+        <Link
+          href="/contact"
+          style={{
+            color: "#94a3b8",
+            textDecoration: "none",
+            fontWeight: "500",
+            fontSize: "14px",
+          }}
+        >
+          Contact
+        </Link>
 
-        {/* زر تسجيل الدخول */}
+        {/* زر تسجيل الدخول الاحترافي */}
         <Link
           href="/login"
           style={{
             backgroundColor: "#059669",
             color: "#ffffff",
-            padding: "6px 14px",
+            padding: "8px 18px",
             borderRadius: "8px",
             textDecoration: "none",
             fontWeight: "600",
-            fontSize: "13px",
+            fontSize: "14px",
             boxShadow: "0 4px 12px rgba(5, 150, 105, 0.3)",
             transition: "background 0.2s",
             whiteSpace: "nowrap",
