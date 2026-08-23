@@ -12,17 +12,15 @@ export default function Navbar() {
         zIndex: 100,
         backdropFilter: "blur(16px)",
         WebkitBackdropFilter: "blur(16px)",
-        background: "rgba(3, 7, 18, 0.85)",
+        background: "rgba(3, 7, 18, 0.8)",
         borderBottom: "1px solid rgba(255, 255, 255, 0.08)",
-        padding: "14px 30px", // مسافات مريحة ومرتبة ترجع الشكل الفخم للـ PC
+        padding: "12px 40px",
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        width: "100%",
-        boxSizing: "border-box",
       }}
     >
-      {/* 🚀 الشعار واسم الموقع */}
+      {/* 🚀 الضغط على الشعار يرجعك للصفحة الرئيسية "/" */}
       <Link
         href="/"
         style={{
@@ -82,7 +80,7 @@ export default function Navbar() {
       </Link>
 
       {/* 🔗 روابط الملاحة + زر تسجيل الدخول */}
-      <nav style={{ display: "flex", gap: "24px", alignItems: "center" }}>
+      <nav style={{ display: "flex", gap: "28px", alignItems: "center" }}>
         <Link
           href="/"
           style={{
@@ -141,7 +139,6 @@ export default function Navbar() {
             fontSize: "14px",
             boxShadow: "0 4px 12px rgba(5, 150, 105, 0.3)",
             transition: "background 0.2s",
-            whiteSpace: "nowrap",
           }}
         >
           Login

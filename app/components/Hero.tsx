@@ -12,7 +12,7 @@ export default function Hero() {
     <section
       style={{
         position: "relative",
-        padding: "140px 20px 100px 20px", // مسافات مريحة وكبيرة للـ PC حتى يرتفع النص وما يتداخل
+        padding: "120px 20px 80px 20px",
         minHeight: "100vh",
         backgroundImage: "url('/hero.jpg')",
         backgroundSize: "cover",
@@ -25,7 +25,7 @@ export default function Hero() {
         textAlign: "center",
       }}
     >
-      {/* 🌑 طبقة عتمة */}
+      {/* 🌑 طبقة عتمة (Overlay) فوق الصورة لضمان وضوح النصوص وقراءتها بوضوح */}
       <div
         style={{
           position: "absolute",
@@ -38,10 +38,10 @@ export default function Hero() {
         }}
       />
 
-      {/* محتوى الـ Hero */}
+      {/* محتوى الـ Hero وضعه فوق طبقة العتمة (z-index: 2) */}
       <div style={{ position: "relative", zIndex: 2, maxWidth: "1000px", width: "100%" }}>
         
-        {/* 🔮 هالة ضوئية */}
+        {/* 🔮 هالة ضوئية خلف النصوص */}
         <div
           style={{
             position: "absolute",
@@ -128,7 +128,7 @@ export default function Hero() {
           </button>
         </div>
 
-        {/* ✨ الميزات السريعة الثلاث */}
+        {/* ✨ الميزات السريعة الزجاجية الثلاث */}
         <div
           style={{
             display: "flex",
